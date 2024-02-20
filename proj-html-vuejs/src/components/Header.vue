@@ -1,9 +1,9 @@
 <template>
     <header class="bg-white text-gray-800 shadow-md">
-      <nav class="container mx-auto flex items-center justify-between py-4">
+      <nav class="container mx-auto flex items-center justify-between py-2 px-14">
         <!-- Logo -->
         <a href="/" class="flex items-center">
-          <img src="../assets/logo-autocar11.png" alt="Logo" class="h-12 mr-2" />
+          <img src="../assets/logo-autocar11.png" alt="Logo" class="h-16" />
         </a>
         
         <!-- Links di navigazione -->
@@ -20,15 +20,15 @@
         <!-- Pulsanti  -->
         <div class="flex items-center space-x-3">
           <button class="flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-black hover:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150">
-            <img src="../assets/padlock.png" alt="My Account" class="h-5 w-5 mr-2" /> My account
+            <img src="../assets/padlock.png" alt="My Account" class="h-10 w-10 mr-2" style="filter: invert(100%);" /> My account
           </button>
           
           <button class="flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-black hover:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150">
-            <img src="../assets/add.png" alt="Add Car" class="h-5 w-5 mr-2" /> Add Car 
+            <img src="../assets/add.png" alt="Add Car" class="h-10 w-10 mr-2" style="filter: invert(100%);" /> Add Car 
           </button>
 
           <button class="flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-black hover:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150">
-            <img src="../assets/headphones.png" alt="Phone" class="h-5 w-5 mr-2" /> +1 (234) 567 89 10
+            <img src="../assets/headphones.png" alt="Phone" class="h-10 w-10 mr-2" style="filter: invert(100%);" /> +1 (234) 567 89 10
           </button>
         </div>
       </nav>
