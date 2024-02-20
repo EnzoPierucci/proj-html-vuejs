@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  
+  <HeaderComp/>
 </template>
 
 <style scoped>
