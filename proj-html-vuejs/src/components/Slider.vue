@@ -29,15 +29,15 @@ export default {
       <!-- Immagini -->
       <div v-for="(image, index) in images" :key="index" class="flex-shrink-0 w-full">
         <img :src="image.src" :alt="image.alt" :class="'w-full object-cover'">
-        <div class="SlidFix">
+        <div class="SlidFix" v-if="currentIndex === index">
 
-            <p class="SlidP1 mb-5 font-bold">{{ image.text1 }}</p>
+            <p class="SlidP1 mb-8 font-bold" v-if="image.text1">{{ image.text1 }}</p>
             
-            <p class="SlidP1 mb-5 font-bold">{{ image.text2 }}</p>
+            <p class="SlidP1 mb-8 font-bold" v-if="image.text2">{{ image.text2 }}</p>
             
-            <p class="SlidP2 mb-5 font-bold">{{ image.text3 }}</p>
+            <p class="SlidP2 mb-8 font-bold" v-if="image.text3">{{ image.text3 }}</p>
             
-            <button class="px-12 py-5 text-white bg-black">{{ image.button }}</button>
+            <button class="px-12 py-5 text-white bg-black" v-if="image.button">{{ image.button }}</button>
         </div>
       </div>
     </div>
@@ -62,14 +62,14 @@ export default {
  }
 
  .SlidP1 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 28px;
     font-weight: 600px;
     
  }
 
  .SlidP2 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 28px;
     font-weight: 600px;
  }
