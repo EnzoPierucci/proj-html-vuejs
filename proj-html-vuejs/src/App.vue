@@ -15,6 +15,7 @@ export default {
 
 <template>
   <HeaderComp/>
+  <MainComp/>
 </template>
 
 <style scoped>
