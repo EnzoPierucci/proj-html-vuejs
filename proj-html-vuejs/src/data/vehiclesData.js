@@ -30,7 +30,7 @@ export const vehicles = [
         location: 'Parigi',
         fuelType: 'Gasoline',
         transmission: 'Manual',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/bmw442-400x300.jpg',
         price: '34.000'
       },
       {
@@ -41,7 +41,7 @@ export const vehicles = [
         location: 'Berlino',
         fuelType: 'Electric',
         transmission: 'Manual',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/yeni-ibiza-2-400x300.jpg',
         price: '20.000'
       },
       {
@@ -52,7 +52,7 @@ export const vehicles = [
         location: 'Berlino',
         fuelType: 'Diesel',
         transmission: 'Manual',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/makyajli-2022-seat-arona-1-400x300.jpg',
         price: '68.000'
       },
       {
@@ -63,7 +63,7 @@ export const vehicles = [
         location: 'Roma',
         fuelType: 'Gasoline',
         transmission: 'Manual',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/vw-taigo3832-400x300.jpg',
         price: '52.000',
       },
       {
@@ -74,7 +74,7 @@ export const vehicles = [
         location: 'Parigi',
         fuelType: 'Diesel',
         transmission: 'Manual',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/2019-vw-t-cross-400x300.jpg',
         price: '48.000'
       },
       {
@@ -85,7 +85,7 @@ export const vehicles = [
         location: 'Roma',
         fuelType: 'Diesel',
         transmission: 'Automatic',
-        image: 'src/assets/Grid/bmw88-400x300.jpg',
+        image: 'src/assets/Grid/volkswagen-passat-1280x720-1-400x300.jpg',
         price: '32.000'
       },
   ];
