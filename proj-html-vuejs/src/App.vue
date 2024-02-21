@@ -16,6 +16,7 @@ export default {
 <template>
   <HeaderComp class="z-30 w-full sticky top-0"/>
   <MainComp/>
+  <FooterComp/>
 </template>
 
 <style scoped>

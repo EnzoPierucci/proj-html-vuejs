@@ -39,7 +39,8 @@ export default {
       
 <section class="recent-articles my-12 px-4 bg-gray-100 py-10">
     <div class="container mx-auto">
-      <h2 class="text-center text-4xl font-semibold mb-10">Recent Articles</h2>
+      <h2 class="text-center text-4xl font-semibold">Recent Articles</h2>
+      <h3 class="text-center  mb-10">Useful information about car</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <!-- Card Articolo -->
         <div v-for="article in articles" :key="article.id" class="article-card rounded-lg overflow-hidden shadow-lg">
