@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <SliderComp class=""/>
+  <SliderComp/>
   <SearchComp/>
 
     <!-- Sezione "Want to buy or sell a vehicle?" -->

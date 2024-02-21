@@ -97,12 +97,12 @@ export default {
       fuelTypes: ['Petrol', 'Diesel', 'Electric'],
       transmissions: ['Manual', 'Automatic'],
       vehicleTypesInfo: [
-      { type: 'Sedan', image: 'scr/assets/Show/cabrio.jpg' },
-      { type: 'Coupe', image: './assets/Show/cabrio.jpg' },
-      { type: 'Hatchback', image: './assets/Show/cabrio.jpg' },
-      { type: 'Pick Up', image: './assets/Show/cabrio.jpg' },
-      { type: 'Sedan', image: './assets/Show/cabrio.jpg' },
-      { type: 'SUV', image: './assets/Show/cabrio.jpg' },   
+      { type: 'Sedan', image: 'src/assets/Show/cabrio.jpg' },
+      { type: 'Coupe', image: 'src/assets/Show/coupe.jpg' },
+      { type: 'Hatchback', image: 'src/assets/Show/hatchback.jpg' },
+      { type: 'Pick Up', image: 'src/assets/Show/pickup.jpg' },
+      { type: 'Sedan', image: 'src/assets/Show/sedan.jpg' },
+      { type: 'SUV', image: 'src/assets/Show/suv.jpg' },   
      ],
     };
   },
