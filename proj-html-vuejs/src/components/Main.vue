@@ -1,12 +1,17 @@
 <script>
 import SliderComp from '../components/Slider.vue'
 import SearchComp from '../components/Search.vue'
+import CustomersComp from '../components/Customers.vue'
+import RecentArticlesComp from '../components/RecentArticles.vue'
+
 export default {
   name: 'App',
   components: {
     SliderComp,
     SearchComp,
-    
+    CustomersComp,
+    RecentArticlesComp,
+
   }
 };
 </script>
@@ -44,7 +49,12 @@ export default {
         </button>
       </div>
     </div>
-  </section>   
+  </section> 
+  
+  <CustomersComp/>
+  <RecentArticlesComp/>
+  
+
 </template>
 
 <style scoped>
