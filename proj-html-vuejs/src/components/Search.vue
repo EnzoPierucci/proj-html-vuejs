@@ -35,6 +35,18 @@
     </div>
   </section>
 
+  <!-- Disponibili per tipo  -->
+  <section class="vehicle-types-indicators my-6 px-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div v-for="info in vehicleTypesInfo" :key="info.type" class="bg-white shadow rounded-lg p-4 flex flex-col items-center justify-center">
+        <img :src="info.image" :alt="info.type" class="w-20 h-20 mb-2">
+        <h3 class="text-lg font-semibold">{{ info.type }}</h3>
+      </div>
+    </div>
+  </section>
+
+  
+
 <!-- Grid ricerca  -->
   <section class="search-results my-6 px-4">
     <div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -51,7 +63,14 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Show All Cars  -->
+  <section class="flex justify-center my-8">
+    <button @click="showAllCars" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors">
+      Show All Cars
+    </button>
+  </section>
+
 </template>
 
 <style scoped>
@@ -77,6 +96,14 @@ export default {
       brands: ['BMW', 'Audi', 'Mercedes','Seat','Volswagen'],
       fuelTypes: ['Petrol', 'Diesel', 'Electric'],
       transmissions: ['Manual', 'Automatic'],
+      vehicleTypesInfo: [
+      { type: 'Sedan', image: 'scr/assets/Show/cabrio.jpg' },
+      { type: 'Coupe', image: './assets/Show/cabrio.jpg' },
+      { type: 'Hatchback', image: './assets/Show/cabrio.jpg' },
+      { type: 'Pick Up', image: './assets/Show/cabrio.jpg' },
+      { type: 'Sedan', image: './assets/Show/cabrio.jpg' },
+      { type: 'SUV', image: './assets/Show/cabrio.jpg' },   
+     ],
     };
   },
   computed: {
@@ -92,6 +119,18 @@ export default {
       );
     });
   }
+  },
+
+  //Logica per Show All Cars 
+  methods: {
+    showAllCars() {
+      this.searchQuery = '';
+      this.selectedLocation = '';
+      this.selectedCategory = '';
+      this.selectedBrand = '';
+      this.selectedFuelType = '';
+      this.selectedTransmission = '';
+    },
   },
 }  
 </script>

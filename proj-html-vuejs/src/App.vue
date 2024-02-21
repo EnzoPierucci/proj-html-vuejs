@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <HeaderComp/>
+  <HeaderComp class="z-30 w-full sticky top-0"/>
   <MainComp/>
 </template>
 

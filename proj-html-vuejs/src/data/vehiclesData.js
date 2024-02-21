@@ -8,7 +8,7 @@ export const vehicles = [
       location: 'Roma',
       fuelType: 'Eletric',
       transmission: 'Automatic',
-      image: './assets/Grid/bmw-m9.jpg',
+      image: 'src/assets/Grid/bmw-m9.jpg',
       price: '34.000'
     },
     {
@@ -85,7 +85,7 @@ export const vehicles = [
         location: 'Roma',
         fuelType: 'Diesel',
         transmission: 'Automatic',
-        image: '/assets/Grid/bmw88-400x300.jpg',
+        image: './assets/Grid/bmw88-400x300.jpg',
         price: '32.000'
       },
   ];
