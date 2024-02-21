@@ -35,6 +35,22 @@
     </div>
   </section>
 
+<!-- Grid ricerca  -->
+  <section class="search-results my-6 px-4">
+    <div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div v-for="vehicle in filteredVehicles" :key="vehicle.id" class="bg-white shadow rounded-lg overflow-hidden">
+        <img :src="vehicle.image" :alt="vehicle.model" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">{{ vehicle.brand }} {{ vehicle.model }}</h3>
+          <p>Location: {{ vehicle.location }}</p>
+          <p>Type: {{ vehicle.type }}</p>
+          <p>Fuel: {{ vehicle.fuelType }}</p>
+          <p>Transmission: {{ vehicle.transmission }}</p>
+          <p>Price: {{ vehicle.price }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
   
 </template>
 
@@ -43,10 +59,13 @@
 </style>
 
 <script>
+import { vehicles } from '../data/vehiclesData.js';
+
 export default {
   name: 'Main',
   data() {
     return {
+      allVehicles: vehicles,
       searchQuery: '',
       selectedLocation: '',
       selectedCategory: '',
@@ -60,17 +79,19 @@ export default {
       transmissions: ['Manual', 'Automatic'],
     };
   },
-  methods: {
-    performSearch() {
-      console.log('Search criteria:', {
-        query: this.searchQuery,
-        location: this.selectedLocation,
-        category: this.selectedCategory,
-        brand: this.selectedBrand,
-        fuelType: this.selectedFuelType,
-        transmission: this.selectedTransmission,
-      });
-    },
+  computed: {
+  filteredVehicles() {
+    return this.allVehicles.filter((vehicle) => {
+      return (
+        (this.searchQuery.length === 0 || vehicle.model.toLowerCase().includes(this.searchQuery.toLowerCase())) &&
+        (this.selectedLocation === '' || vehicle.location === this.selectedLocation) &&
+        (this.selectedCategory === '' || vehicle.type === this.selectedCategory) &&
+        (this.selectedBrand === '' || vehicle.brand === this.selectedBrand) &&
+        (this.selectedFuelType === '' || vehicle.fuelType === this.selectedFuelType) &&
+        (this.selectedTransmission === '' || vehicle.transmission === this.selectedTransmission)
+      );
+    });
+  }
   },
-};
+}  
 </script>
